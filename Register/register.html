@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="register.css">
+    <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+            rel="stylesheet" />
+</head>
+<body>
+    <div id="minicircle"></div>
+    <div class="heading"><h1 id="heading">Welcome To The Registration Page!</h1>
+        <h4 style="font-family: Arial, Helvetica, sans-serif;color:rgba(250, 235, 215, 0.504)">(Plesase register so that you can proceed to my Github Channel)
+            <i class="ri-arrow-down-circle-fill" style="color: rgba(255, 255, 255, 0.495);"></i></h4>
+    <div id="register-container">
+        <form action="/register" method="post" id="register-form">
+            <input name="email" placeholder="Enter Your Email" type="email" id="email" required>
+            <div class="password-container">
+                <input name="password" placeholder="Password" type="password" id="password" required>
+                <i class="far fa-eye" id="togglePassword" style="cursor: pointer;"></i>
+            </div>
+            <div id="button1"><button id="button" type="submit">Submit</button></div>
+        </form>
+    </div>
+    <div id="signin"><h3>Already registered, log-in here <a href="/login" style="cursor: pointer;">Sign in</a></h3></div>
+</h3></div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="register.js"></script>
+</body>
+</html>
+

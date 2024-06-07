@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Website</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./loco.css" />
+    </head>
+    <body>
+        <div id="minicircle"></div>
+        <div id="main">
+            <div id="hero">
+                <div id="nav">
+                    <a href="#">SHREETAM HOTA</a>
+                    <h4 style="color: antiquewhite;">Swipe Down<i class="ri-arrow-down-wide-line"></i></h4>
+                </div>
+                <div id="heading">
+                    <div class="bounding">
+                        <h1 class="boundingelem">WEB/APP</h1>
+                    </div>
+                    <div id="heading">
+                        <div class="bounding">
+                        <div class="blocktext">
+                            <h1 id="second" class="boundingelem">DESIGNER</h1>
+                            <h6 class="boundingelem">BASED 0N BHUBANESWAR</h6>
+                        </div>
+                        </div>
+                        </div>
+                    <div id="smallhead">
+                        <div class="bounding">
+                        <h5 class="boundingelem">AVAILABLE FOR FREELANCE</h5></div>
+                        <div class="bounding">
+                        <h5 class="boundingelem">WORK FROM HOME</h5>
+                    </div>
+                    </div>
+                    <div id="herofooter">
+                        <a href="#" style="cursor: pointer">Certification On Webdev from Academor<i
+                                class="ri-arrow-right-up-line"></i></a>
+                        <a href="#"style="cursor: pointer">Certification On Webdev From Udemy <i
+                                class="ri-arrow-right-up-line"></i></a>
+                        <div id="iconset">
+                            <div class="circle"><i
+                                    class="ri-arrow-down-line" style="color: black;"></i></div>
+                            <div class="circle"><i
+                                    class="ri-arrow-down-line" style="color: black;"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="secondpage">
+                <div id="projectheading"><h3>My Projects</h3></div>
+                <div class="elem">
+                    <!-- <img src="./desktop-wallpaper-tony-stark-discovers-a-new-element-scene-arc-reactor-iron-man-2-ultra.jpg" alt="ironman"> -->
+                    <a href="/register">YT MRH</a>
+                    <h6>2024</h6>
+                </div>
+                <div class="elem">
+                    <!-- <img src="./iron-man-tony-stark-robert-downey-jr-wallpaper-preview.jpg" alt="ironman"> -->
+                    <a href="/register">TRAVEL TRACKER</a><h6>2024</h6>
+                </div>
+                <div class="elem">
+                    <!-- <img src="./tony-stark-iron-man-iron-man-3-glowing-wallpaper-preview.jpg" alt="ironman"> -->
+                    <a href="/register">NOTE KEEPER</a><h6>2024</h6>
+                </div>
+            </div>
+            <div id="about">
+                <div id="imageabout"><img src="./Linkedin good image-modified.png" alt="profile photo" width="200vw" height="200vh"></div>
+                <div id="textabout"><h2 style="font-family:sans-serif">(ABOUT
+                        ME)</h2>
+                    <p style="font-size: 15px;margin-bottom: 10px;">I am a proficient full-stack web developer with expertise in React, Node.js, Express, and
+                         PostgreSQL. I have completed several projects utilizing these technologies, demonstrating my ability to build robust and efficient web 
+                         applications. 
+                        If you are interested in collaborating, please feel free to reach out.
+                    </p><a href="#" class="a">Let's Talk</a></div>
+            </div>
+            <div id="subscribe">
+                <h5>(FORGOT TO MENTION)</h5>
+                <a href="#" class="resume">HERE IS MY RESUME<i
+                        class="ri-arrow-right-up-line"></i></a>
+            </div>
+            <div id="footer">
+                <div id="footerleft">
+                    <h4>2024 <i class="ri-copyright-line"></i></h4>
+                    <div id="clock"><h4></h4></div>
+                </div>
+                <div id="footerright">
+                    <div style="font-size: large;"><i class="ri-phone-fill" style="color: white;"></i>+91-XXXXXXXXXX</div>
+                    <a href="#"><i class="ri-instagram-line"
+                            style="font-size: large;"></i>INSTAGRAM</a>
+                    <a href="#"><i class="ri-linkedin-box-line"
+                            style="font-size: large;"></i>LINKEDIN</a>
+                    <a href="#"><i class="ri-twitter-x-line"></i>TWITTER</a>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+            integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+        <script src="index.js"></script>
+
+
+
+
+
+
+
+        <script>  document.addEventListener('DOMContentLoaded', (event) => {
+            let observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        aboutpageanime();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            observer.observe(document.querySelector('#about'));
+        });</script>
+        </body>
+</html>
