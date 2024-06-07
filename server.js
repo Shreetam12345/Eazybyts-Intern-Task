@@ -4,6 +4,10 @@ import { fileURLToPath } from "url";
 import { dirname, join } from "path";
 import pg from "pg";
 import bcrypt from "bcrypt";
+import { config } from 'dotenv';
+
+config();
+
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -15,11 +19,11 @@ const saltRounds=10;
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const db = new pg.Client({
-  user: "postgres",
-  host: "localhost",
-  database: "Eazybyts",
-  password: "shreetam123",
-  port: 5432,
+  user: process.env.DB_USER,
+  host: process.env.DB_HOST,
+  database: process.env.DB_NAME,
+  password: process.env.DB_PASSWORD,
+  port: process.env.DB_PORT,
 });
 
 db.connect();
