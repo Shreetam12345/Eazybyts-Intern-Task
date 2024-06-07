@@ -4,9 +4,9 @@ import { fileURLToPath } from "url";
 import { dirname, join } from "path";
 import pg from "pg";
 import bcrypt from "bcrypt";
-import { config } from 'dotenv';
+import { config } from "dotenv";
 
-config();
+config({ path: './.env' });
 
 
 const __filename = fileURLToPath(import.meta.url);
