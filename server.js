@@ -16,6 +16,7 @@ const app = express();
 const PORT = 3000;
 const saltRounds=10;
 
+
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const db = new pg.Client({
